@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Player Vs Three Dumb AI</title>
+  <script src="jquery-3.2.1.js"></script>
+  <script src="Card.js"></script>
+  <script src="Hearts.js"></script>
+  <script src="HeartsMatch.js"></script>
+  <script src="MyPlayer.js"></script>
+  <script src="DumbAI.js"></script>
+  <script src="MyPlayerVsThreeDumbAI.js"></script>
+  <link rel="stylesheet" type="text/css" href="MyPlayerVsThreeDumbAI.css">
+</head>
+
+<body>
+  <h1>My Player Vs Three Dumb AI</h1>
+  <div class="all_area">
+    <div class="playing_area">
+      <div class="column">
+        <div class="west_player">West Player
+          <div class="w_card_space"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="north_player"><span class="north_player">North Player</span>
+          <div class="n_card_space"></div>
+          <div class="score_container">
+            <div class="n_header" id="n_header">North
+              <div class="n_score_space"></div>
+            </div>
+            <div class="e_header" id="e_header">East
+              <div class="e_score_space"></div>
+            </div>
+            <div class="s_header" id="s_header">South
+              <div class="s_score_space"></div>
+            </div>
+            <div class="w_header" id="w_header">West
+              <div class="w_score_space"></div>
+            </div>
+          </div>
+          <div class="commands">
+            <button type="button" id="pass">Pass</button>
+            <button type="button" id="play">Play</button>
+            <button type="button" id="showDealt">Show Hand</button>
+            <button type="button" id="showPlayable">Show Playable</button>
+          </div>
+        </div>
+        <div class="scoreboard">
+          <div class="score_space"></div>
+        </div>
+        <div class="south_player">South Player
+          <div class="s_card_space"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="east_player">East Player
+          <div class="e_card_space"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

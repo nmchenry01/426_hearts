@@ -1,0 +1,218 @@
+body {
+    background-image: url('card_background_3.jpg');
+    background-size: cover;
+}
+
+.all_area {
+    display: flex;
+    justify-content: center;
+}
+
+.playing_area {
+    background-color: green;
+    height: 90vh;
+    width: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border: gold;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 25px;
+}
+
+.playing_area .column:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+}
+
+.playing_area .column:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+}
+
+.playing_area .column:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: white;
+}
+
+.north_player {
+    flex: 1;
+    /* outline-color: black;
+    outline: solid;*/
+    text-align: center;
+    width: 300px;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.n_card_space {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size: 36px;
+    color: gold;
+    /* outline: solid;
+    outline-color: black;*/
+}
+
+.s_card_space {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size: 36px;
+    color: gold;
+    /*  outline: solid;
+    outline-color: black;*/
+}
+
+.w_card_space {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size: 36px;
+    color: gold;
+    /* outline: solid;
+    outline-color: black;*/
+}
+
+.e_card_space {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size: 36px;
+    color: gold;
+    /* outline: solid;
+    outline-color: black;*/
+}
+
+.commands {
+    position: absolute;
+    transform: translate(400px, 10px);
+    width: 300px;
+    height: 50px;
+    /* outline: solid;
+    outline-color: black;*/
+    z-index: 9999;
+}
+
+.score_container {
+    position: absolute;
+    transform: translate(-400px, 10px);
+    width: 300px;
+    height: 100px;
+    /*outline: solid;
+    outline-color: black;*/
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.scoreboard {
+    flex: 1;
+   /* outline-color: black;
+    outline: solid;*/
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoreboard .score_space {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.south_player {
+    flex: 1;
+    /* outline-color: black;
+    outline: solid;*/
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.west_player {
+    flex: 1;
+    /* outline-color: black;
+    outline: solid;*/
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.east_player {
+    flex: 1;
+    /*outline-color: black;
+    outline: solid;*/
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.selected {
+    border: solid blue;
+}
+
+.n_score_space {
+    font-size: 30px;
+    color: gold;
+}
+
+.e_score_space {
+    font-size: 30px;
+    color: gold;
+}
+
+.s_score_space {
+    font-size: 30px;
+    color: gold;
+}
+
+.w_score_space {
+    font-size: 30px;
+    color: gold;
+}
+
+#n_header{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#e_header{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#s_header{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#w_header{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
